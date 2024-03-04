@@ -1,0 +1,36 @@
+
+
+
+all: comp.o find.o ops.o add.o rem.o main1 main2 main3 main4 main5 main6 main7 main8 main9
+ 
+comp.o: src/src1/comp.cpp
+	g++ -Wall --std=c++17 -c src/src1/comp.cpp
+find.o: src/src1/find.cpp
+	g++ -Wall --std=c++17 -c src/src1/find.cpp
+ops.o: src/src1/ops.cpp
+	g++ -Wall --std=c++17 -c src/src1/ops.cpp
+add.o: src/src2/add.cpp
+	g++ -Wall --std=c++17 -c src/src2/add.cpp
+rem.o: src/src2/rem.cpp
+	g++ -Wall --std=c++17 -c src/src2/rem.cpp
+main1:	main/main1.cpp add.o comp.o find.o ops.o rem.o 
+	g++ -Wall --std=c++17 main/main1.cpp add.o comp.o find.o ops.o rem.o -o main1
+main2:	main/main2.cpp add.o comp.o find.o ops.o rem.o 
+	g++ -Wall --std=c++17 main/main2.cpp add.o comp.o find.o ops.o rem.o -o main2    
+main3:	main/main3.cpp add.o comp.o find.o ops.o rem.o 
+	g++ -Wall --std=c++17 main/main3.cpp add.o comp.o find.o ops.o rem.o -o main3    
+main4:	main/main4.cpp add.o comp.o find.o ops.o rem.o 
+	g++ -Wall --std=c++17 main/main4.cpp add.o comp.o find.o ops.o rem.o -o main4   
+main5:	main/main5.cpp add.o comp.o find.o ops.o rem.o 
+	g++ -Wall --std=c++17 main/main5.cpp add.o comp.o find.o ops.o rem.o -o main5    
+main6:	main/main6.cpp add.o comp.o find.o ops.o rem.o 
+	g++ -Wall --std=c++17 main/main6.cpp add.o comp.o find.o ops.o rem.o -o main6    
+main7:	main/main7.cpp add.o comp.o find.o ops.o rem.o 
+	g++ -Wall --std=c++17 main/main7.cpp add.o comp.o find.o ops.o rem.o -o main7   
+main8:	main/main8.cpp add.o comp.o find.o ops.o rem.o 
+	g++ -Wall --std=c++17 main/main8.cpp add.o comp.o find.o ops.o rem.o -o main8    
+main9:	main/main9.cpp add.o comp.o find.o ops.o rem.o 
+	g++ -Wall --std=c++17 main/main9.cpp add.o comp.o find.o ops.o rem.o -o main9   
+    
+clean:
+	rm -f comp.o find.o ops.o add.o rem.o main1 main2 main3 main4 main5 main6 main7 main8 main9
