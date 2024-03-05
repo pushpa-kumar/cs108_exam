@@ -1,0 +1,10 @@
+git branch -d my-branch
+Delete branch 
+
+
+
+git branch -m <old-name> <new-name>
+Change branch name
+
+
+git log --oneline --graph --all --decorate ⁠
