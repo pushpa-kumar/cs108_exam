@@ -7,4 +7,4 @@ git branch -m <old-name> <new-name>
 Change branch name
 
 
-git log --oneline --graph --all --decorate ⁠
+git log --oneline --graph --all --decorate
